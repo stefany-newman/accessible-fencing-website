@@ -352,7 +352,7 @@
 
 :root {
   /* Constants */
-  --blue-grey: hsl(222.2, 84%, 4.9%); /* Primary */
+  --blue-grey: hsl(226, 47%, 11%); /* Primary */ 
   /* Components */
   --header-background: var(--blue-grey);
   --violet-50:  #f5f3ff;
