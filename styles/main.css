@@ -403,14 +403,27 @@ button{
 
 header{
   background: var(--header-background);
+  & .main-navigation{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    & .logo, .trial-lesson{
+      flex-basis: 50%;
+    }
+
+    & .trial-lesson{
+      text-align: right;
+    }
+  }
   & a{
     color: white;
   }
 
   & nav{
-  & a{
-    text-decoration: none;
-  }
+    & a{
+      text-decoration: none;
+    }
   }
 }
 
@@ -428,3 +441,26 @@ header{
   border: 0;
 }
 
+@media (min-width: 768px) {
+  header{
+    & .main-navigation{
+  
+      & .logo, .trial-lesson{
+        flex-basis: auto;
+      }
+  
+      & .trial-lesson{
+        text-align: right;
+      }
+    }
+    & a{
+    }
+  
+    & nav{
+      & a{
+        
+      }
+    }
+  }
+
+}
