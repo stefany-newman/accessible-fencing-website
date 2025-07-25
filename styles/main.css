@@ -261,6 +261,13 @@
   textarea {
     overflow: auto;
   }
+
+  ul
+  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
   
   /**
    * 1. Add the correct box sizing in IE 10.
@@ -399,4 +406,25 @@ header{
   & a{
     color: white;
   }
+
+  & nav{
+  & a{
+    text-decoration: none;
+  }
+  }
 }
+
+/* Utilities */ 
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
