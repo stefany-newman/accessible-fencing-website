@@ -358,30 +358,24 @@
 /* Custom Misc Styles */
 
 :root {
-  /* Constants */
+  /* Colors */
   --blue-grey: hsl(226, 47%, 11%); /* Primary */ 
-  /* Components */
+  --accent: hsl(174, 100%, 24%);  
+  /* Components */ 
   --header-background: var(--blue-grey);
-  --violet-50:  #f5f3ff;
-  --violet-100: #ede9fe;
-  --violet-200: #ddd6fe;
-  --violet-300: #c4b5fd;
-  --violet-400: #a78bfa;
-  --violet-500: #8b5cf6; /* Primary */
-  --violet-600: #7c3aed;
-  --violet-700: #6d28d9;
-  --violet-800: #5b21b6;
-  --violet-900: #4c1d95;
-  
-  --blue: #0976BE;
-  --blue-lighter: #448ec0;
-  
-  --sage-green-50: #50C878;
-  --mint-green-50: #98FF98;
-  --forest-green: #2E6F40;
-
-  --black: #000;
+  /* Spacing */
+  --default: 1rem;
+  --black: #000;  
   --white: #fff;
+
+  /* Misc */
+  --rem12px: 0.75rem;
+  --rem24px: 1.5rem;
+
+}
+
+.container{
+  padding: calc(var(--default) / 2);
 }
 
 img{
@@ -408,9 +402,15 @@ header{
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
+    row-gap: 15px;
 
     & .logo, .trial-lesson{
       flex-basis: 50%;
+      align-self: center;
+    }
+
+    & .logo{
+      vertical-align: super;
     }
 
     & .trial-lesson{
@@ -464,4 +464,22 @@ header{
     }
   }
 
+}
+
+.cta{
+  /*padding: var(--rem12px) var(--rem24px); */
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  text-decoration: none;
+  background-color: var(--white);
+}
+
+.accent-text-color{
+  color: var(--accent);
+}
+
+.accent-background-color
+{
+  background-color: var(--accent);
 }
