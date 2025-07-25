@@ -1,13 +1,8 @@
+/* If width is larger than 768, move CTA to the end of the navigation. */
+
 const navList = document.querySelector("#main-navigation");
-const listItems = navList.querySelectorAll("li");
-const ctaReal = navList.querySelector(".trial-lesson");
-const listItemsArray = Array.from(listItems);
-
-console.log(listItemsArray);
-const cta = listItemsArray[1];
-
-console.log(cta);
-
-//navList.removeChild(ctaReal);
-navList.append(ctaReal);
-
+const cta = navList.querySelector(".trial-lesson");
+const mediaQuery = window.matchMedia('(min-width: 768px)')
+if (mediaQuery.matches) {
+  navList.append(cta);
+}
