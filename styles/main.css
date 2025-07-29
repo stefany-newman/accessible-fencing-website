@@ -385,6 +385,8 @@ body{
 
 .container{
   padding: var(--padding);
+  max-width: 1200px;
+  margin:auto;
 }
 
 img{
@@ -417,8 +419,8 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
     gap: 15px;
 
     & .logo-container, .trial-lesson{
@@ -461,16 +463,22 @@ header{
   border: 0;
 }
 
-@media (min-width: 395px) {
+@media (min-width: 768px) {
   header{
     & .main-navigation{
-  
+      justify-content: flex-start;
       & .logo-container, .trial-lesson{
         flex-basis: auto;
       }
   
       & .trial-lesson{
         text-align: right;
+      }
+      li:first-child{
+        margin-right: auto;
+      }
+      li:last-child{
+        margin-left: auto;
       }
     }
     & a{
