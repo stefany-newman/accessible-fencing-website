@@ -360,11 +360,13 @@
 :root {
   /* Colors */
   --blue-grey: hsl(226, 47%, 11%); /* Primary */ 
+  --light-blue-grey: hsl(213, 31%, 84%);
   --accent: hsl(174, 100%, 24%);
     /* Spacing */
   --default: 1rem;
   /* Components */ 
   --header-background: var(--blue-grey);
+  --navigation-text-color: var(--light-blue-grey);
   --padding: var(--default);
 
 
@@ -412,7 +414,7 @@ header{
     align-items: baseline;
     justify-content: space-around;
     align-items: center;
-      gap: 15px;
+    gap: 15px;
 
     & .logo-container, .trial-lesson{
       flex-basis: max-content;
@@ -431,9 +433,8 @@ header{
     }
   }
   & a{
-    color: white;
+    color: var(--navigation-text-color);
   }
-
   & nav{
     & a{
       text-decoration: none;
