@@ -502,3 +502,14 @@ header{
 {
   background-color: var(--accent);
 }
+
+.main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border: 3px solid rgb(63, 11, 203);
+
+  & .hero-column{
+    border: 3px solid green;
+  }
+}
