@@ -360,11 +360,14 @@
 :root {
   /* Colors */
   --blue-grey: hsl(226, 47%, 11%); /* Primary */ 
-  --accent: hsl(174, 100%, 24%);  
+  --accent: hsl(174, 100%, 24%);
+    /* Spacing */
+  --default: 1rem;
   /* Components */ 
   --header-background: var(--blue-grey);
-  /* Spacing */
-  --default: 1rem;
+  --padding: var(--default);
+
+
   --black: #000;  
   --white: #fff;
 
@@ -375,7 +378,7 @@
 }
 
 .container{
-  padding: calc(var(--default) / 2);
+  padding: var(--padding);
 }
 
 img{
@@ -392,7 +395,13 @@ button{
   cursor: pointer;
 }
 *:focus{
-  outline: 3px solid var(--blue);
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.logo{
+  display: block;
+  font-weight: bold;
 }
 
 header{
@@ -402,15 +411,19 @@ header{
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
-    row-gap: 15px;
+    align-items: center;
+      gap: 15px;
 
-    & .logo, .trial-lesson{
-      flex-basis: 50%;
+    & .logo-container, .trial-lesson{
+      flex-basis: max-content;
       align-self: center;
     }
 
-    & .logo{
-      vertical-align: super;
+    & .logo-container{
+      &  span{
+          vertical-align: super;
+          font-size: 1.1em;
+      };
     }
 
     & .trial-lesson{
@@ -442,11 +455,11 @@ header{
   border: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 395px) {
   header{
     & .main-navigation{
   
-      & .logo, .trial-lesson{
+      & .logo-container, .trial-lesson{
         flex-basis: auto;
       }
   
@@ -468,7 +481,7 @@ header{
 
 .cta{
   /*padding: var(--rem12px) var(--rem24px); */
-  padding: 12px 24px;
+  padding: 3px 9px;
   border-radius: 5px;
   border: 3px solid transparent;
   text-decoration: none;
