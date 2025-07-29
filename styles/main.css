@@ -376,7 +376,11 @@
   /* Misc */
   --rem12px: 0.75rem;
   --rem24px: 1.5rem;
+  --main-font: "Verdana", sans-serif;
+}
 
+body{
+  font-family: var(--main-font);
 }
 
 .container{
@@ -404,6 +408,7 @@ button{
 .logo{
   display: block;
   font-weight: bold;
+  color: var(--white);
 }
 
 header{
