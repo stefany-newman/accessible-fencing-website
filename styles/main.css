@@ -361,6 +361,7 @@
   /* Colors */
   --blue-grey: hsl(226, 47%, 11%); /* Primary */ 
   --light-blue-grey: hsl(213, 31%, 84%);
+  --lightest-grey: HSL(210, 17%, 99%);
   --dark-blue-grey: HSL(214, 22%, 35%);
   --accent: hsl(174, 100%, 24%);
     /* Spacing */
@@ -493,9 +494,10 @@ button.cta{
     margin-bottom: 10px;
 }
 
-.main{
+.hero{
   display: grid;
   align-items: center;
+  background-color: var(--lightest-grey);
 }
 
 .pill{
@@ -536,7 +538,7 @@ button.cta{
       }
     }
   }
-  .main{
+  .hero{
     grid-template-columns: 1fr 1fr;
   }
   h1{
