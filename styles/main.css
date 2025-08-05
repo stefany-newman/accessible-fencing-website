@@ -361,6 +361,7 @@
   /* Colors */
   --blue-grey: hsl(226, 47%, 11%); /* Primary */ 
   --light-blue-grey: hsl(213, 31%, 84%);
+  --dark-blue-grey: HSL(214, 22%, 35%);
   --accent: hsl(174, 100%, 24%);
     /* Spacing */
   --default: 1rem;
@@ -444,6 +445,8 @@ header{
 
     & .cta{
         border-color: var(--accent);
+        background-color: var(--white);
+        color: var(--accent);
       }
     }
   }
@@ -476,24 +479,23 @@ header{
   border-radius: 5px;
   border: 1px solid var(--light-blue-grey);
   text-decoration: none;
-  background-color: var(--white);
-  color: var(--accent);
-}
-
-.reverse-colors{
-  color: var(--white);
   background-color: var(--accent);
+  color: var(--white);
+  display: inline-block;
 }
 
+button.cta{
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.ctas .cta{
+    margin-bottom: 10px;
+}
 
 .main{
   display: grid;
   align-items: center;
-  border: 3px solid rgb(63, 11, 203);
-
-  & .hero-column{
-    border: 3px solid green;
-  }
 }
 
 .pill{
@@ -537,5 +539,17 @@ header{
   .main{
     grid-template-columns: 1fr 1fr;
   }
+  h1{
+    font-size: 3em;
+  }
 
+}
+
+.attention{
+  color: var(--dark-blue-grey);
+  font-family: cursive;
+}
+
+.hero-image{
+  border-radius: 1rem;
 }
