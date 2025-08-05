@@ -361,6 +361,8 @@
   /* Colors */
   --blue-grey: hsl(226, 47%, 11%); /* Primary */ 
   --light-blue-grey: hsl(213, 31%, 84%);
+  --lightest-grey: HSL(210, 17%, 99%);
+  --dark-blue-grey: HSL(214, 22%, 35%);
   --accent: hsl(174, 100%, 24%);
     /* Spacing */
   --default: 1rem;
@@ -376,11 +378,15 @@
   /* Misc */
   --rem12px: 0.75rem;
   --rem24px: 1.5rem;
+  /* Fonts */
   --main-font: "Verdana", sans-serif;
+  --font-size: 1rem;
+  --small-font-size: 0.875rem;
 }
 
 body{
   font-family: var(--main-font);
+  font-size: var(--font-size);
 }
 
 .container{
@@ -437,6 +443,12 @@ header{
 
     & .trial-lesson{
       text-align: right;
+
+    & .cta{
+        border-color: var(--accent);
+        background-color: var(--white);
+        color: var(--accent);
+      }
     }
   }
   & a{
@@ -463,6 +475,45 @@ header{
   border: 0;
 }
 
+.cta{
+  padding: 5px 11px;
+  border-radius: 5px;
+  border: 1px solid var(--light-blue-grey);
+  text-decoration: none;
+  background-color: var(--accent);
+  color: var(--white);
+  display: inline-block;
+}
+
+button.cta{
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.ctas .cta{
+    margin-bottom: 10px;
+}
+
+.hero{
+  display: grid;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.pill{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  border: 1px solid var(--light-blue-grey);
+  padding: 2px;
+  border-radius: 5px;
+}
+
+main{
+  background-color: var(--lightest-grey);
+}
+
+
+/* Desktop Media Query */
 @media (min-width: 768px) {
   header{
     & .main-navigation{
@@ -490,22 +541,20 @@ header{
       }
     }
   }
+  .hero{
+    grid-template-columns: 1fr 1fr;
+  }
+  h1{
+    font-size: 3em;
+  }
 
 }
 
-.cta{
-  padding: 5px 11px;
-  border-radius: 5px;
-  border: 1px solid var(--accent);
-  text-decoration: none;
-  background-color: var(--white);
+.attention{
+  color: var(--dark-blue-grey);
+  font-family: cursive;
 }
 
-.accent-text-color{
-  color: var(--accent);
-}
-
-.accent-background-color
-{
-  background-color: var(--accent);
+.hero-image{
+  border-radius: 1rem;
 }
