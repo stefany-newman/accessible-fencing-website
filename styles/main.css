@@ -376,11 +376,15 @@
   /* Misc */
   --rem12px: 0.75rem;
   --rem24px: 1.5rem;
+  /* Fonts */
   --main-font: "Verdana", sans-serif;
+  --font-size: 1rem;
+  --small-font-size: 0.875rem;
 }
 
 body{
   font-family: var(--main-font);
+  font-size: var(--font-size);
 }
 
 .container{
@@ -437,6 +441,10 @@ header{
 
     & .trial-lesson{
       text-align: right;
+
+    & .cta{
+        border-color: var(--accent);
+      }
     }
   }
   & a{
@@ -463,6 +471,42 @@ header{
   border: 0;
 }
 
+.cta{
+  padding: 5px 11px;
+  border-radius: 5px;
+  border: 1px solid var(--light-blue-grey);
+  text-decoration: none;
+  background-color: var(--white);
+  color: var(--accent);
+}
+
+.reverse-colors{
+  color: var(--white);
+  background-color: var(--accent);
+}
+
+
+.main{
+  display: grid;
+  align-items: center;
+  border: 3px solid rgb(63, 11, 203);
+
+  & .hero-column{
+    border: 3px solid green;
+  }
+}
+
+.pill{
+  display: inline-block;
+  font-size: var(--small-font-size);
+  border: 1px solid var(--light-blue-grey);
+  padding: 2px;
+  border-radius: 5px;
+}
+
+
+
+/* Desktop Media Query */
 @media (min-width: 768px) {
   header{
     & .main-navigation{
@@ -490,33 +534,8 @@ header{
       }
     }
   }
-
-}
-
-.cta{
-  padding: 5px 11px;
-  border-radius: 5px;
-  border: 1px solid var(--accent);
-  text-decoration: none;
-  background-color: var(--white);
-}
-
-.accent-text-color{
-  color: var(--accent);
-}
-
-.accent-background-color
-{
-  background-color: var(--accent);
-}
-
-.main{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  border: 3px solid rgb(63, 11, 203);
-
-  & .hero-column{
-    border: 3px solid green;
+  .main{
+    grid-template-columns: 1fr 1fr;
   }
+
 }
