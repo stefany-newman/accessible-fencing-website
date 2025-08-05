@@ -497,7 +497,7 @@ button.cta{
 .hero{
   display: grid;
   align-items: center;
-  background-color: var(--lightest-grey);
+  padding-top: 4rem;
 }
 
 .pill{
@@ -508,6 +508,9 @@ button.cta{
   border-radius: 5px;
 }
 
+main{
+  background-color: var(--lightest-grey);
+}
 
 
 /* Desktop Media Query */
