@@ -566,20 +566,22 @@ main{
   }
   .cards{
     .card{
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
         padding: var(--padding) !important;
-        border: 1px solid var(--border-color);
-        border-radius: var(--border-radius);
       svg{
-          display: block !important;
+          display: inline-block !important;
           text-align: center;
       }
     }
-  
   }
-
+.our-programs{
+    .card{
+      align-items: flex-start !important;
+    }
+  }
+  .contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .attention{
@@ -595,10 +597,18 @@ main{
   display: flex;
   flex-flow: row wrap;
   gap: 2rem;
+  .card-header{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+  }
   .card{
     flex: 1 1 300px;
     padding: calc(var(--padding) / 2);
     text-align: center;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
     svg{
       display: none;
       stroke: var(--global-text-color);
@@ -621,4 +631,59 @@ main{
 
 h3{
   font-size: 1.1rem;
+}
+
+.our-programs{
+  .pill{
+    border: 1px solid transparent;
+    color: hsl(150, 100%, 20%);
+    background-color: #dcfce7;
+    padding: calc(var(--padding) / 3);
+  }
+  .pill.last{
+    background-color: #f1f5f9 !important;
+    color: var(--dark-blue-grey) !important;
+  }
+  .card{
+    text-align: left !important;
+    padding: var(--padding);
+    svg{
+      display: inline-block;
+    }
+  }
+  p.default, ul{
+    color: var(--global-text-color);
+    text-align: left;
+  }
+  ul{
+    line-height: 2;
+  }
+}
+
+.contact-info{
+  max-width: 600px;
+}
+
+.contact-us{
+  .section-header{
+    max-width: 600px;
+  }
+}
+
+.contact-details{
+  display: flex;
+  flex-flow: column wrap;
+  display: flex;
+  gap: 2rem;
+  color: var(--global-text-color);
+  strong{
+    display: inline-block;
+  }
+  svg{
+    vertical-align: middle;
+  }
+  span{
+    display: block;
+    margin-left: 2.3rem;
+  }
 }
