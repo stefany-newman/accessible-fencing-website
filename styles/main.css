@@ -376,8 +376,10 @@
   --white: #fff;
 
   /* Misc */
-  --rem12px: 0.75rem;
   --rem24px: 1.5rem;
+  --rem14px: 0.875rem;
+  --rem12px: 0.75rem;
+
   /* Fonts */
   --main-font: "Verdana", sans-serif;
   --font-size: 1rem;
@@ -508,7 +510,7 @@ button.cta{
   border-radius: 5px;
 }
 
-main section{
+main{
   background-color: var(--lightest-grey);
 }
 
