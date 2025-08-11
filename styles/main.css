@@ -363,12 +363,16 @@
   --light-blue-grey: hsl(213, 31%, 84%);
   --lightest-grey: HSL(210, 17%, 99%);
   --dark-blue-grey: HSL(214, 22%, 35%);
+  --muted-grey: HSL(215, 22%, 35%);
   --accent: hsl(174, 100%, 24%);
     /* Spacing */
   --default: 1rem;
   /* Components */ 
   --header-background: var(--blue-grey);
   --navigation-text-color: var(--light-blue-grey);
+  --global-text-color: var(--muted-grey);
+  --border-color: var(--light-blue-grey);
+  --border-radius: 16px;
   --padding: var(--default);
 
 
@@ -377,6 +381,7 @@
 
   /* Misc */
   --rem24px: 1.5rem;
+  --rem20px: 1.25rem;
   --rem14px: 0.875rem;
   --rem12px: 0.75rem;
 
@@ -399,6 +404,15 @@ body{
 
 img{
   width: 100%;
+}
+
+p:not(.default){
+  color: var(--global-text-color);
+  max-width: 65ch;
+  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 button{
@@ -550,6 +564,21 @@ main{
   h1{
     font-size: 3em;
   }
+  .cards{
+    .card{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        padding: var(--padding) !important;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+      svg{
+          display: block !important;
+          text-align: center;
+      }
+    }
+  
+  }
 
 }
 
@@ -560,4 +589,36 @@ main{
 
 .hero-image{
   border-radius: 1rem;
+}
+
+.cards{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  .card{
+    flex: 1 1 300px;
+    padding: calc(var(--padding) / 2);
+    text-align: center;
+    svg{
+      display: none;
+      stroke: var(--global-text-color);
+    }
+    h3{
+      font-weight: normal;
+    }
+  }
+}
+
+.section-header{
+  text-align: center;
+  h2{
+    font-size: 1.7rem;
+  }
+  .section-description{
+    font-size: var(--rem20px);
+  }
+}
+
+h3{
+  font-size: 1.1rem;
 }
