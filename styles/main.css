@@ -694,6 +694,10 @@ h3{
   svg{
     vertical-align: middle;
   }
+  a:has(>span){
+    display: block;
+  }
+
   span{
     display: block;
     margin-left: 2.3rem;
