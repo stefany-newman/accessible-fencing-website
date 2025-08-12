@@ -443,7 +443,6 @@ header, footer{
 .main-navigation{
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
     align-items: center;
     justify-content: center;
     gap: 15px;
