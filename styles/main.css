@@ -425,7 +425,9 @@ button{
   cursor: pointer;
 }
 *:focus{
-  outline: 3px solid var(--accent);
+  outline: 3px double var(--black);
+  box-shadow: 0 0 0 3px var(--accent), 0 0 0 7px var(--white);
+  border-radius: 5px;
   outline-offset: 2px;
 }
 
