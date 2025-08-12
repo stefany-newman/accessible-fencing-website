@@ -469,10 +469,11 @@ header, footer{
         color: var(--accent);
       }
     }
+    & a:not(.logo){
+      color: var(--navigation-text-color);
+    }
   }
-  & a{
-    color: var(--navigation-text-color);
-  }
+  
   & nav{
     & a{
       text-decoration: none;
@@ -587,7 +588,7 @@ main{
     gap: 2rem;
   }
   .footer-content{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 231px 1fr 1fr;
     align-items: center;
     justify-content: space-between;
   }
@@ -624,6 +625,11 @@ main{
     }
     h3{
       font-weight: normal;
+    }
+  }
+  footer{
+    .main-navigation{
+      justify-content: start;
     }
   }
 }
@@ -741,10 +747,9 @@ footer{
     gap: 1rem;
   }
   svg{
-    vertical-align: text-bottom;
-  }
-  .main-navigation{
-    justify-content: start;
+    vertical-align: middle;
+    position: relative;
+    top: -6px;
   }
   .cr{
     text-wrap-style: pretty;
