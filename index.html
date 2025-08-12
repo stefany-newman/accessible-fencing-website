@@ -191,30 +191,88 @@
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
                         </svg>
-                        <strong>Location:</strong> 123 Championship Drive, Elite Sports Center
+                        <strong>Location:</strong> <span>123 Championship Drive, Elite Sports Center</span>
                     </li>
                     <li>
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M22 2L11 13"/>
                             <path d="M22 2l-7 20-4-9-9-4z"/>
                         </svg>
-                        <strong>Phone:</strong> (555) 123-FENCE
+                        <strong>Phone:</strong> <span>(555) 123-FENCE</span>
                     </li>
                     <li>
                         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M4 4h16v16H4z"/>
                             <path d="M22 6l-10 7L2 6"/>
                         </svg>
-                        <strong>Email:</strong> <a href="mailto:info@pointyfencing.com">info@pointyfencing.com</a>
+                        <strong>Email:</strong> <a href="mailto:info@pointyfencing.com"><span>info@pointyfencing.com</span></a>
                     </li>
                 </ul>
             </div>
             <div class="contact-form">
-                form here
+                <h3>Schedule a Trial Lesson</h3>
+                <p class="default">All fields are required.</p>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input aria-required="true" type="text" id="full-name" name="full-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input aria-required="true" type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input aria-required="true" type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferred-contact">Preferred Contact</label>
+                        <select aria-required="true" id="preferred-contact" name="preferred-contact" required>
+                            <option value="" disabled selected>Select preferred contact method</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience-level">Experience Level</label>
+                        <select aria-required="true" id="experience-level" name="experience-level" required>
+                            <option value="" disabled selected>Select your experience level</option>
+                            <option value="beginner">Complete Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="cta reverse-colors">Book Trial Lesson</button>
+                </form>
             </div>
         </div>
     </div>
 </section>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="/" class="logo">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/>
+                        <line x1="13" y1="19" x2="19" y2="13"/>
+                        <line x1="16" y1="16" x2="20" y2="20"/>
+                        <line x1="19" y1="21" x2="21" y2="19"/>
+                    </svg>
+                    <span><span class="sr-only">Homepage - </span>Pointy Fencing Club</span>
+                </a>
+            </div>
+            <nav aria-label="Main" > 
+                <ul class="main-navigation">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <p class="default cr">&copy; 2025 Pointy Fencing Club. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
     </main>
 </body>
 </html>
