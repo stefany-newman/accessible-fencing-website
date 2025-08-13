@@ -374,6 +374,7 @@
   --border-color: var(--light-blue-grey);
   --border-radius: 16px;
   --padding: var(--default);
+  --section-grey: hsl(200, 27%, 98%);
 
 
   --black: #000;  
@@ -531,11 +532,6 @@ button.cta:not(.reverse-colors){
   border-radius: 5px;
 }
 
-main{
-  background-color: var(--lightest-grey);
-}
-
-
 /* Desktop Media Query */
 @media (min-width: 768px) {
   header{
@@ -593,6 +589,15 @@ main{
     align-items: center;
     justify-content: space-between;
   }
+  .contact-form{
+    padding:2rem;
+    background-color: var(--section-grey);
+  }
+  section > .container{
+    padding-top: 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 }
 
 .attention{
@@ -633,7 +638,15 @@ main{
       justify-content: start;
     }
   }
+
 }
+
+section:nth-of-type(1)
+{
+  background-color: var(--lightest-grey);
+}
+
+
 
 .section-header{
   text-align: center;
@@ -650,6 +663,7 @@ h3{
 }
 
 .our-programs{
+  background-color: var(--section-grey);
   .pill{
     border: 1px solid transparent;
     color: hsl(150, 100%, 20%);
@@ -776,3 +790,4 @@ footer{
 .skip-link:focus {
   top: 0;
 }
+
