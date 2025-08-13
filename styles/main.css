@@ -511,9 +511,18 @@ header, footer{
   font-size: var(--rem14px);
 }
 
+button.cta:hover{
+  color:var(--white);
+  background-color: var(--header-background);
+}
+
 button.cta:not(.reverse-colors){
   background-color: var(--white);
   color: var(--black);
+}
+
+main a:not([class]):hover{
+  color: var(--header-background);
 }
 
 
