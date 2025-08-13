@@ -562,6 +562,7 @@ button.cta:not(.reverse-colors){
   }
   .hero{
     grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
   h1{
     font-size: 3em;
@@ -592,6 +593,9 @@ button.cta:not(.reverse-colors){
   .contact-form{
     padding:2rem;
     background-color: var(--section-grey);
+  }
+  .contact-info{
+    padding: 2rem;;
   }
   section > .container{
     padding-top: 0;
