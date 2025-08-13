@@ -482,6 +482,10 @@ header, footer{
     }
   }
 
+  a:not(.logo):hover{
+    text-decoration: underline;
+  }
+
 /* Utilities */ 
 
 .sr-only {
