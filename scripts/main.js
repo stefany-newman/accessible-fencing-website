@@ -9,7 +9,7 @@ if (mediaQuery.matches) {
 
 /* Thank you for your message. */
 
-const formHeader = document.querySelector("#form-header");
+const formHeader = document.querySelector("#contact-us-form-h");
 const form = document.querySelector("form");
 const formInstructions = document.querySelector("#form-instructions");
 
