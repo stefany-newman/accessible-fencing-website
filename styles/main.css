@@ -259,7 +259,7 @@ footer .main-navigation{
     gap: 2rem;
   }
   .footer-content{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: max-content 2fr;
     align-items: center;
     justify-items: center;
   }
