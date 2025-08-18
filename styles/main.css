@@ -472,3 +472,13 @@ section, footer, header, main {
     } }
   
 }
+/* Forced Colors Mode */
+@media (forced-colors: active) {
+  .cards {
+    & .card {
+        svg {
+            stroke: currentColor;
+        }
+    }
+}
+}
