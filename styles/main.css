@@ -193,9 +193,14 @@ footer .main-navigation{
 }
 /* Desktop Media Query */
 @media (min-width: 768px) {
-  footer .main-navigation{
-    justify-content: center;
-  }
+  footer{ 
+    .a11y-note{
+      grid-column: 1 / -1;
+    }
+      .main-navigation{
+      justify-content: center;
+      }
+    }
   header{
     & .main-navigation{
       justify-content: flex-start;
