@@ -112,10 +112,16 @@ header, footer{
         border-color: var(--accent);
         background-color: var(--white);
         color: var(--accent);
+
+        &:hover{
+          color: var(--white);
+          background-color: var(--accent);
+        }
       }
     }
-    & a:not(.logo){
+    & a:not(.logo):not(.cta){
       color: var(--navigation-text-color);
+      text-decoration: underline;
     }
   }
   
@@ -125,8 +131,8 @@ header, footer{
     }
   }
 
-  a:not(.logo):hover{
-    text-decoration: underline;
+  a:not(.logo):not(.cta):hover{
+    color: turquoise;
   }
 
 /* Utilities */ 
@@ -154,7 +160,7 @@ header, footer{
   font-size: var(--rem14px);
 }
 
-button.cta:hover{
+button.cta:hover, a.cta:hover{
   color:var(--white);
   background-color: var(--header-background);
 }
@@ -194,9 +200,6 @@ footer .main-navigation{
 /* Desktop Media Query */
 @media (min-width: 768px) {
   footer{ 
-    .a11y-note{
-      grid-column: 1 / -1;
-    }
       .main-navigation{
       justify-content: center;
       }
@@ -256,9 +259,9 @@ footer .main-navigation{
     gap: 2rem;
   }
   .footer-content{
-    grid-template-columns: 231px 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    justify-content: space-between;
+    justify-items: center;
   }
   .contact-form{
     padding:2rem;
