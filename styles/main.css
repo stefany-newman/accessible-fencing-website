@@ -235,6 +235,9 @@ main a:not([class]):hover{
 .our-programs{
     .card{
       align-items: flex-start !important;
+      h3{
+        margin-top: 0;
+      }
     }
   }
   .contact-container{
@@ -452,3 +455,20 @@ footer{
   top: 0;
 }
 
+/* Rendering fixes - i.e. Forced Color Mode, etc.  */
+
+section, footer, header, main {
+  border: 1px solid transparent;
+} 
+
+/* Dark Mode */ 
+@media (prefers-color-scheme: dark) {
+  .main-navigation {
+    & .trial-lesson {
+        & .cta
+        {
+          border: 1px solid blueviolet; /* White shows up dark grey for some reason */ 
+        }
+    } }
+  
+}
