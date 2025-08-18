@@ -91,7 +91,7 @@ header, footer{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 28px;
 
     & .logo-container, .trial-lesson{
       flex-basis: max-content;
@@ -188,8 +188,14 @@ main a:not([class]):hover{
   border-radius: 5px;
 }
 
+footer .main-navigation{
+  justify-content: start;
+}
 /* Desktop Media Query */
 @media (min-width: 768px) {
+  footer .main-navigation{
+    justify-content: center;
+  }
   header{
     & .main-navigation{
       justify-content: flex-start;
