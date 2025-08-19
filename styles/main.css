@@ -494,3 +494,6 @@ main {
         }
     }
 }
+span[class*="conformance"] {
+    font-weight: bold;
+}
