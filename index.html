@@ -1,285 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script defer src="scripts/main.js"></script>
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+        <link rel="stylesheet" href="styles/normalize.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png" />
         <title>Fencing Club - The Pointy End</title>
     </head>
-<body>
-    <header>
-        <div class="container">
-            <nav aria-label="Main">
-                <a href="#main" class="skip-link">Skip to main content</a>
-                <ul class="main-navigation" id="main-navigation">
-                    <li class="logo-container">
+    <body>
+        <header>
+            <div class="container">
+                <nav aria-label="Main">
+                    <a href="#main" class="skip-link">Skip to main content</a>
+                    <ul class="main-navigation" id="main-navigation">
+                        <li class="logo-container">
+                            <a href="/" class="logo">
+                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
+                                    <line x1="13" y1="19" x2="19" y2="13" />
+                                    <line x1="16" y1="16" x2="20" y2="20" />
+                                    <line x1="19" y1="21" x2="21" y2="19" />
+                                </svg>
+                                <span><span class="sr-only">Homepage - </span>Pointy Fencing Club</span>
+                            </a>
+                        </li>
+                        <li class="trial-lesson">
+                            <a href="#contact-us-form-h" class="cta join-now"> Schedule a lesson </a>
+                        </li>
+                        <li class="generic"><a href="#about">About</a></li>
+                        <li class="generic">
+                            <a href="#programs">Programs</a>
+                        </li>
+                        <li class="generic">
+                            <a href="#contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="">
+                <div class="container hero">
+                    <div class="hero-column">
+                        <span class="pill">
+                            <span class="sr-only">Established</span>
+                            <span aria-hidden="true"> Est.</span>
+                            2010
+                        </span>
+                        <h1 id="main">Master the Art of Fencing</h1>
+                        <p class="default">Join our premier fencing club and discover the elegance, strategy, and athleticism of one of the world's oldest combat sports.</p>
+                        <div class="ctas">
+                            <a href="#contact-us" class="cta reverse-colors">Start Your Journey</a>
+                        </div>
+                    </div>
+                    <div class="hero-column">
+                        <img src="images/fencing/medals.png" class="hero-image" alt="2 of our fencers celebrating with medals and a trophy." />
+                    </div>
+                </div>
+            </section>
+            <section class="why-choose-us">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 id="about">Why Choose Pointy?</h2>
+                        <p class="section-description">We combine traditional techniques with modern training methods to develop skilled, confident fencers at every level.</p>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <!-- Coach -->
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="m22 21-2-2" />
+                                <path d="m16 16 2 2" />
+                                <circle cx="18" cy="13" r="3" />
+                            </svg>
+
+                            <h3>Expert Instruction</h3>
+                            <p>Learn from Olympic-level coaches and former national champions with decades of experience.</p>
+                        </div>
+
+                        <div class="card">
+                            <!-- Sword -->
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
+                                <line x1="13" y1="19" x2="19" y2="13" />
+                                <line x1="16" y1="16" x2="20" y2="20" />
+                                <line x1="19" y1="21" x2="21" y2="19" />
+                            </svg>
+                            <h3>All Weapons</h3>
+                            <p>Master épée, foil, and sabre with specialized training programs for each weapon.</p>
+                        </div>
+
+                        <div class="card">
+                            <!-- Trophy -->
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                <path d="M4 22h16" />
+                                <path d="M10 14.66V17c0 .55.47.98.97 1.21C11.56 18.75 12 19.38 12 20.15V22" />
+                                <path d="M14 14.66V17c0 .55-.47.98-.97 1.21C12.44 18.75 12 19.38 12 20.15V22" />
+                                <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                            </svg>
+                            <h3>Competitive Success</h3>
+                            <p>Our athletes regularly compete and excel at regional, national, and international levels.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="our-programs">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 id="programs">Our Programs</h2>
+                        <p class="section-description">From beginners to Olympic hopefuls, we have programs for every skill level.</p>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Beginner Classes</h3>
+                                <span class="pill">All Ages</span>
+                            </div>
+                            <p class="default">Perfect introduction to fencing fundamentals</p>
+
+                            <ul>
+                                <li>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12,6 12,12 16,14" />
+                                    </svg>
+                                    1.5 hours per session
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                        <circle cx="9" cy="7" r="4" />
+                                        <path d="m22 21-2-2" />
+                                        <path d="m16 16 2 2" />
+                                        <circle cx="18" cy="13" r="3" />
+                                    </svg>
+                                    Small group instruction
+                                </li>
+                            </ul>
+                            <p class="default">
+                                Learn basic techniques, footwork, and safety in a supportive environment.
+                                <strong>Equipment provided.</strong>
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Competitive Training</h3>
+                                <span class="pill last">Advanced</span>
+                            </div>
+                            <p class="default">Advanced training for tournament preparation</p>
+                            <ul>
+                                <li>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <polyline points="12,6 12,12 16,14" />
+                                    </svg>
+                                    2-3 hours per session
+                                </li>
+                                <li>
+                                    <!-- Trophy -->
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                        <path d="M4 22h16" />
+                                        <path d="M10 14.66V17c0 .55.47.98.97 1.21C11.56 18.75 12 19.38 12 20.15V22" />
+                                        <path d="M14 14.66V17c0 .55-.47.98-.97 1.21C12.44 18.75 12 19.38 12 20.15V22" />
+                                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                                    </svg>
+                                    Tournament preparation
+                                </li>
+                            </ul>
+                            <p class="default">Intensive training for serious competitors. Includes tactical analysis and mental preparation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-us">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 id="contact-us">Contact Us</h2>
+                        <p class="section-description">Ready to begin your fencing journey? Contact us to schedule a trial lesson or learn more about our programs.</p>
+                    </div>
+                    <div class="contact-container">
+                        <div class="contact-info">
+                            <ul class="contact-details">
+                                <li>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                    </svg>
+                                    <strong>Location:</strong>
+                                    <span>123 Championship Drive, Elite Sports Center</span>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 2L11 13" />
+                                        <path d="M22 2l-7 20-4-9-9-4z" />
+                                    </svg>
+                                    <strong>Phone:</strong>
+                                    <span>(555) 123-FENCE</span>
+                                </li>
+                                <li>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16v16H4z" />
+                                        <path d="M22 6l-10 7L2 6" />
+                                    </svg>
+                                    <strong>Email:</strong>
+                                    <a href="mailto:info@pointyfencing.com"><span>info@pointyfencing.com</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contact-form">
+                            <h3 id="contact-us-form-h" tabindex="-1">Schedule a Trial Lesson</h3>
+                            <p class="default" id="form-instructions">All fields are required.</p>
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <label for="full-name">Full Name</label>
+                                    <input aria-required="true" type="text" id="full-name" autocomplete="name" name="full-name" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input aria-required="true" type="email" id="email" autocomplete="email" name="email" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input aria-required="true" type="text" id="phone" autocomplete="tel" name="phone" required />
+                                </div>
+                                <div class="form-group">
+                                    <label for="preferred-contact">Preferred Contact</label>
+                                    <select aria-required="true" id="preferred-contact" name="preferred-contact" required>
+                                        <option value="" disabled selected>Select preferred contact method</option>
+                                        <option value="email">Email</option>
+                                        <option value="phone">Phone</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="experience-level">Experience Level</label>
+                                    <select aria-required="true" id="experience-level" name="experience-level" required>
+                                        <option value="" disabled selected>Select your experience level</option>
+                                        <option value="beginner">Complete Beginner</option>
+                                        <option value="intermediate">Intermediate</option>
+                                        <option value="advanced">Advanced</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="cta reverse-colors">Book Trial Lesson</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
                         <a href="/" class="logo">
                             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/>
-                                <line x1="13" y1="19" x2="19" y2="13"/>
-                                <line x1="16" y1="16" x2="20" y2="20"/>
-                                <line x1="19" y1="21" x2="21" y2="19"/>
+                                <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
+                                <line x1="13" y1="19" x2="19" y2="13" />
+                                <line x1="16" y1="16" x2="20" y2="20" />
+                                <line x1="19" y1="21" x2="21" y2="19" />
                             </svg>
                             <span><span class="sr-only">Homepage - </span>Pointy Fencing Club</span>
                         </a>
-                    </li>
-                    <li class="trial-lesson"><a href="#contact-us-form-h" class="cta join-now"> Schedule a lesson </a></li>
-                    <li class="generic"><a href="#about">About</a></li>
-                    <li class="generic"><a href="#programs">Programs</a></li>
-                    <li class="generic"><a href="#contact-us">Contact Us</a></li>          
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="">
-            <div class="container hero">
-                <div class="hero-column">
-                    <span class="pill">
-                        <span class="sr-only">Established</span>
-                        <span aria-hidden="true"> Est.</span>
-                        2010
-                    </span>
-                    <h1 id="main">
-                        Master the Art of Fencing
-                    </h1>
-                    <p class="default">
-                        Join our premier fencing club and discover the elegance, strategy, and athleticism of one of the world's oldest combat sports.
-                    </p>
-                    <div class="ctas">
-                        <a href="#contact-us" class="cta reverse-colors">Start Your Journey</a>
                     </div>
-                </div>
-                <div class="hero-column">
-                    <img src="images/fencing/medals.png" class="hero-image" alt="2 of our fencers celebrating with medals and a trophy.">
-                </div>
-            </div>
-        </section>
-        <section class="why-choose-us">
-        <div class="container">
-            <div class="section-header">
-                <h2 id="about">Why Choose Pointy?</h2>
-                <p class="section-description">
-                    We combine traditional techniques with modern training methods to develop skilled, confident fencers at every level.
-                </p>
-            </div>
-            <div class="cards">
-            <div class="card">
-                <!-- Coach -->
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                    <circle cx="9" cy="7" r="4"/>
-                    <path d="m22 21-2-2"/>
-                    <path d="m16 16 2 2"/>
-                    <circle cx="18" cy="13" r="3"/>
-                  </svg>
-                
-                <h3>Expert Instruction</h3>
-                <p>Learn from Olympic-level coaches and former national champions with decades of experience.</p>
-              </div>
-              
-              <div class="card">
-               <!-- Sword -->
-               <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/>
-                <line x1="13" y1="19" x2="19" y2="13"/>
-                <line x1="16" y1="16" x2="20" y2="20"/>
-                <line x1="19" y1="21" x2="21" y2="19"/>
-            </svg>
-                <h3>All Weapons</h3>
-                <p>Master épée, foil, and sabre with specialized training programs for each weapon.</p>
-              </div>
-              
-              <div class="card">
-                <!-- Trophy -->
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
-                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
-                    <path d="M4 22h16"/>
-                    <path d="M10 14.66V17c0 .55.47.98.97 1.21C11.56 18.75 12 19.38 12 20.15V22"/>
-                    <path d="M14 14.66V17c0 .55-.47.98-.97 1.21C12.44 18.75 12 19.38 12 20.15V22"/>
-                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
-                  </svg>
-                <h3>Competitive Success</h3>
-                <p>Our athletes regularly compete and excel at regional, national, and international levels.</p>
-              </div>
-            </div>
-            </div>
-        </section>
-
-        <section class="our-programs">
-            <div class="container">
-                <div class="section-header">
-                    <h2 id="programs">Our Programs</h2>
-                    <p class="section-description">
-                        From beginners to Olympic hopefuls, we have programs for every skill level.
-                    </p>
-                </div>
-                <div class="cards">
-                    <div class="card">
-                        <div class="card-header">
-                            <h3>Beginner Classes</h3>
-                            <span class="pill">All Ages</span>
-                        </div>
-                        <p class="default">Perfect introduction to fencing fundamentals</p>
-                        
-                        <ul>
+                    <nav aria-label="Main">
+                        <ul class="main-navigation">
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#programs">Programs</a></li>
+                            <li><a href="#contact-us">Contact Us</a></li>
                             <li>
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <polyline points="12,6 12,12 16,14"/>
-                                  </svg>
-                                1.5 hours per session
-                            </li>
-                            <li>
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                                    <circle cx="9" cy="7" r="4"/>
-                                    <path d="m22 21-2-2"/>
-                                    <path d="m16 16 2 2"/>
-                                    <circle cx="18" cy="13" r="3"/>
-                                </svg>
-                                Small group instruction
+                                <a href="/accessibility-statement.html">Accessibility Statement</a>
                             </li>
                         </ul>
-                        <p class="default">Learn basic techniques, footwork, and safety in a supportive environment. <strong>Equipment provided.</strong></p>
-                    </div> 
-                    <div class="card">
-                    <div class="card-header">
-                        <h3>Competitive Training</h3>
-                        <span class="pill last">Advanced</span>
-                    </div>   
-                        <p class="default">Advanced training for tournament preparation</p>
-                        <ul>
-                            <li>
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <polyline points="12,6 12,12 16,14"/>
-                                </svg>
-                                2-3 hours per session
-                            </li>
-                            <li>
-                                <!-- Trophy -->
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
-                                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
-                                    <path d="M4 22h16"/>
-                                    <path d="M10 14.66V17c0 .55.47.98.97 1.21C11.56 18.75 12 19.38 12 20.15V22"/>
-                                    <path d="M14 14.66V17c0 .55-.47.98-.97 1.21C12.44 18.75 12 19.38 12 20.15V22"/>
-                                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
-                                </svg>
-                                Tournament preparation
-                            </li>
-                        </ul>
-                        <p class="default">Intensive training for serious competitors. Includes tactical analysis and mental preparation.</p>
-                    </div>
+                    </nav>
+                    <p class="default cr">&copy; 2025 Pointy Fencing Club. All rights reserved.</p>
+                    <span class="a11y-note">This website conforms to WCAG 2.2 accessibility standards.</span>
                 </div>
             </div>
-        </section>
-        <section class="contact-us">
-    <div class="container">
-        <div class="section-header">
-            <h2 id="contact-us">Contact Us</h2>
-            <p class="section-description">
-                Ready to begin your fencing journey? Contact us to schedule a trial lesson or learn more about our programs.
-            </p>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <ul class="contact-details">
-                    <li>
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
-                        </svg>
-                        <strong>Location:</strong> <span>123 Championship Drive, Elite Sports Center</span>
-                    </li>
-                    <li>
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 2L11 13"/>
-                            <path d="M22 2l-7 20-4-9-9-4z"/>
-                        </svg>
-                        <strong>Phone:</strong> <span>(555) 123-FENCE</span>
-                    </li>
-                    <li>
-                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16v16H4z"/>
-                            <path d="M22 6l-10 7L2 6"/>
-                        </svg>
-                        <strong>Email:</strong> <a href="mailto:info@pointyfencing.com"><span>info@pointyfencing.com</span></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="contact-form">
-                <h3 id="contact-us-form-h" tabindex="-1">Schedule a Trial Lesson</h3>
-                <p class="default" id="form-instructions">All fields are required.</p>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="full-name">Full Name</label>
-                        <input aria-required="true" type="text" id="full-name" autocomplete="name" name="full-name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input aria-required="true" type="email" id="email" autocomplete="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input aria-required="true" type="text" id="phone" autocomplete="tel" name="phone" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="preferred-contact">Preferred Contact</label>
-                        <select aria-required="true" id="preferred-contact" name="preferred-contact" required>
-                            <option value="" disabled selected>Select preferred contact method</option>
-                            <option value="email">Email</option>
-                            <option value="phone">Phone</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="experience-level">Experience Level</label>
-                        <select aria-required="true" id="experience-level" name="experience-level" required>
-                            <option value="" disabled selected>Select your experience level</option>
-                            <option value="beginner">Complete Beginner</option>
-                            <option value="intermediate">Intermediate</option>
-                            <option value="advanced">Advanced</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="cta reverse-colors">Book Trial Lesson</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-</main>
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <a href="/" class="logo">
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5"/>
-                        <line x1="13" y1="19" x2="19" y2="13"/>
-                        <line x1="16" y1="16" x2="20" y2="20"/>
-                        <line x1="19" y1="21" x2="21" y2="19"/>
-                    </svg>
-                    <span><span class="sr-only">Homepage - </span>Pointy Fencing Club</span>
-                </a>
-            </div>
-            <nav aria-label="Main" > 
-                <ul class="main-navigation">
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#programs">Programs</a></li>
-                    <li><a href="#contact-us">Contact Us</a></li>
-                    <li><a href="/accessibility-statement.html">Accessibility Statement</a></li>
-                </ul>
-            </nav>
-            <p class="default cr">
-                &copy; 2025 Pointy Fencing Club. All rights reserved.
-            </p>
-            <span class="a11y-note">This website conforms to WCAG 2.2 accessibility standards.</span>
-        </div>
-    </div>
-</footer>
-</body>
+        </footer>
+    </body>
 </html>
