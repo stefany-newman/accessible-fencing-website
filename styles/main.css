@@ -173,7 +173,7 @@ button.cta:not(.reverse-colors) {
 }
 
 main a:not([class]):hover {
-    color: var(--header-background);
+    color: var(--header-background) !important;
 }
 
 .ctas .cta {
