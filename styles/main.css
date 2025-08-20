@@ -497,3 +497,7 @@ main {
 span[class*="conformance"] {
     font-weight: bold;
 }
+
+.bold {
+    font-weight: bold;
+}
