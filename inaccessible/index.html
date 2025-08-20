@@ -17,14 +17,37 @@
         <div class="hello-bar">
             <p class="default hello-bar-warning">Inaccessible Site</p>
         </div>
-        <header>
+        <div class="header">
             <div class="container">
-                <nav aria-label="Main">
-                    <a href="#main" class="skip-link">Skip to main content</a>
+                <div aria-label="Main">
+                    <!-- 
+                        Instead of removing the skip link, we just make it not work. 
+                        That makes it harder for auditors to diagnose it as an issue. 
+                     -->
+                    <a href="#" class="skip-link">Skip to main content</a>
                     <ul class="main-navigation" id="main-navigation">
                         <li class="logo-container">
                             <a href="/" class="logo">
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <svg
+                                    role="img"
+                                    aria-label="The image has a dark navy blue background.
+
+In the center, aligned horizontally, there are two main elements:
+	1.	Icon – On the left side, there is a simple white line icon of a fencing sword (épée/foil). The sword is angled slightly downward to the right, with a straight blade, guard, and small handle.
+	2.	Text – To the right of the sword, in bold white font, are the words:
+“Pointy Fencing Club”
+
+The font is sans-serif, modern, and thick, giving a clean and professional appearance. The overall design is minimalistic, with the icon and text standing out clearly against the solid dark background.
+"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="30"
+                                    height="30"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round">
                                     <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
                                     <line x1="13" y1="19" x2="19" y2="13" />
                                     <line x1="16" y1="16" x2="20" y2="20" />
@@ -44,18 +67,14 @@
                             <a href="#contact-us">Contact Us</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </header>
-        <main>
+        </div>
+        <div class="main">
             <section class="">
                 <div class="container hero">
                     <div class="hero-column">
-                        <span class="pill">
-                            <span class="sr-only">Established</span>
-                            <span aria-hidden="true"> Est.</span>
-                            2010
-                        </span>
+                        <span class="pill"> Est.2010 </span>
                         <h1 id="main">Master the Art of Fencing</h1>
                         <p class="default">Join our premier fencing club and discover the elegance, strategy, and athleticism of one of the world's oldest combat sports.</p>
                         <div class="ctas">
@@ -63,7 +82,7 @@
                         </div>
                     </div>
                     <div class="hero-column">
-                        <img src="images/fencing/medals.png" class="hero-image" alt="2 of our fencers celebrating with medals and a trophy." />
+                        <img src="images/fencing/medals.png" class="hero-image" />
                     </div>
                 </div>
             </section>
@@ -76,7 +95,7 @@
                     <div class="cards">
                         <div class="card">
                             <!-- Coach -->
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                                 <circle cx="9" cy="7" r="4" />
                                 <path d="m22 21-2-2" />
@@ -90,7 +109,7 @@
 
                         <div class="card">
                             <!-- Sword -->
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
                                 <line x1="13" y1="19" x2="19" y2="13" />
                                 <line x1="16" y1="16" x2="20" y2="20" />
@@ -102,7 +121,7 @@
 
                         <div class="card">
                             <!-- Trophy -->
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
                                 <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
                                 <path d="M4 22h16" />
@@ -133,14 +152,14 @@
 
                             <ul>
                                 <li>
-                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <circle cx="12" cy="12" r="10" />
                                         <polyline points="12,6 12,12 16,14" />
                                     </svg>
                                     1.5 hours per session
                                 </li>
                                 <li>
-                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
                                         <circle cx="9" cy="7" r="4" />
                                         <path d="m22 21-2-2" />
@@ -163,7 +182,7 @@
                             <p class="default">Advanced training for tournament preparation</p>
                             <ul>
                                 <li>
-                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <circle cx="12" cy="12" r="10" />
                                         <polyline points="12,6 12,12 16,14" />
                                     </svg>
@@ -171,7 +190,7 @@
                                 </li>
                                 <li>
                                     <!-- Trophy -->
-                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
                                         <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
                                         <path d="M4 22h16" />
@@ -197,14 +216,14 @@
                         <div class="contact-info">
                             <ul class="contact-details">
                                 <li>
-                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
                                     </svg>
                                     <strong>Location:</strong>
                                     <span>123 Championship Drive, Elite Sports Center</span>
                                 </li>
                                 <li>
-                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M22 2L11 13" />
                                         <path d="M22 2l-7 20-4-9-9-4z" />
                                     </svg>
@@ -212,7 +231,7 @@
                                     <span>(555) 123-FENCE</span>
                                 </li>
                                 <li>
-                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M4 4h16v16H4z" />
                                         <path d="M22 6l-10 7L2 6" />
                                     </svg>
@@ -260,13 +279,13 @@
                     </div>
                 </div>
             </section>
-        </main>
-        <footer>
+        </div>
+        <div class="footer">
             <div class="container">
                 <div class="footer-content">
                     <div class="footer-logo">
                         <a href="/" class="logo">
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polyline points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
                                 <line x1="13" y1="19" x2="19" y2="13" />
                                 <line x1="16" y1="16" x2="20" y2="20" />
@@ -280,14 +299,14 @@
                             <li><a href="#about">About Us</a></li>
                             <li><a href="#programs">Programs</a></li>
                             <li><a href="#contact-us">Contact Us</a></li>
-                            <li><a href="accessibility-statement.html">Accessibility Statement</a></li>
+                            <li><a href="accessibility-statement.html" target="_blank">Accessibility Statement</a></li>
                         </ul>
                     </nav>
                     <p class="default cr">&copy; 2025 Pointy Fencing Club. All rights reserved.</p>
                     <span class="a11y-note">This website conforms to WCAG 2.2 accessibility standards.</span>
                 </div>
             </div>
-        </footer>
+        </div>
         <div class="hello-bar">
             <p class="default hello-bar-warning">Inaccessible Site</p>
         </div>
