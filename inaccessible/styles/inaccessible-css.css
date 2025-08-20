@@ -1,0 +1,11 @@
+/* Ugly styles for the inaccessible hello bar */
+.hello-bar {
+    background-color: neon-pink;
+    font-size: 24px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    padding: 20px;
+    border: 5px dashed darkorange;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
