@@ -191,3 +191,14 @@ a {
         }
     }
 }
+
+@media (max-width: 600px) {
+    body {
+        max-width: 600px; /* Example: styles at ~200% zoom */
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+    .hello-bar {
+        background-color: lightyellow;
+    }
+}
