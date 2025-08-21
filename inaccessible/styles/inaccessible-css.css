@@ -211,3 +211,9 @@ input {
     font-size: 1.7rem;
     font-weight: bold;
 }
+
+.label {
+    display: block;
+    font-size: var(--rem14px);
+    margin-bottom: 0.5rem;
+}
