@@ -1,3 +1,44 @@
+/* Inaccessible styles */
+
+:root {
+    /* Colors */
+    --blue-grey: hsl(226, 47%, 11%); /* Primary */
+    --light-blue-grey: hsl(213, 31%, 84%);
+    --lightest-grey: HSL(210, 17%, 99%);
+    --dark-blue-grey: HSL(214, 22%, 35%);
+    --muted-grey: HSL(215, 22%, 35%);
+    --accent: hsl(174, 100%, 24%);
+    /* Spacing */
+    --default: 1rem;
+    /* Components */
+    --header-background: var(--blue-grey);
+    --navigation-text-color: var(--light-blue-grey);
+    --global-text-color: var(--muted-grey);
+    --border-color: var(--light-blue-grey);
+    --border-radius: 16px;
+    --padding: var(--default);
+    --section-grey: hsl(200, 27%, 98%);
+
+    --black: #000;
+    --white: #fff;
+
+    /* Misc */
+    --rem24px: 1.5rem;
+    --rem20px: 1.25rem;
+    --rem14px: 0.875rem;
+    --rem12px: 0.75rem;
+
+    /* Fonts */
+    --main-font: "Verdana", sans-serif;
+    --font-size: 16px;
+    --small-font-size: 12px;
+}
+
+body {
+    font-family: var(--main-font) !important;
+    font-size: var(--font-size) !important;
+}
+
 /* Ugly styles for the inaccessible hello bar */
 .hello-bar {
     background-color: neon-pink;
