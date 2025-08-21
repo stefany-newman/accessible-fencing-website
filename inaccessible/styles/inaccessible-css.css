@@ -202,3 +202,7 @@ a {
         background-color: lightyellow;
     }
 }
+
+input {
+    border: 2px solid red !important;
+}
