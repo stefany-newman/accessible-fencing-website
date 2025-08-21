@@ -206,3 +206,8 @@ a {
 input {
     border: 2px solid red !important;
 }
+
+.h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
