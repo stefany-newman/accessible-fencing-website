@@ -10,7 +10,6 @@ form.addEventListener("submit", (e) => {
     formHeader.textContent = "Thank you for your message. We will get back to you as soon as possible.";
     form.style.display = "none";
     formInstructions.style.display = "none";
-    formHeader.focus();
 });
 
 /* Show scrollbar if zoomed in 400% or more, hence breaking 1.4.10 Reflow AA */
