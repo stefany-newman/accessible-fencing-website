@@ -232,3 +232,7 @@ main,
         border: 0 !important;
     }
 }
+label,
+.label {
+    color: #8d8b8b !important;
+}
