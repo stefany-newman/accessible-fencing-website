@@ -217,3 +217,18 @@ input {
     font-size: var(--rem14px);
     margin-bottom: 0.5rem;
 }
+
+/* Messing up FCM */
+section,
+footer,
+header,
+main,
+.cta {
+    border: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        border: 0 !important;
+    }
+}
