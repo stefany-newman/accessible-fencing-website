@@ -247,3 +247,7 @@ label,
 .label {
     color: #8d8b8b !important;
 }
+
+.our-programs {
+    background: linear-gradient(90deg, #ffffff, #5c6995);
+}
