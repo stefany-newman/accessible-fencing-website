@@ -207,9 +207,20 @@ input {
     border: 2px solid red !important;
 }
 
-.h2 {
+.h2,
+h3 {
     font-size: 1.7rem;
     font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Aria and Helvetica are harder to be read by people with dyslexia */
+.section-description {
+    font-family: Impact, sans-serif;
 }
 
 .label {
