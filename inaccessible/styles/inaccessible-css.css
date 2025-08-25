@@ -1,0 +1,253 @@
+/* Inaccessible styles */
+
+:root {
+    /* Colors */
+    --blue-grey: hsl(226, 47%, 11%); /* Primary */
+    --light-blue-grey: hsl(213, 31%, 84%);
+    --lightest-grey: HSL(210, 17%, 99%);
+    --dark-blue-grey: HSL(214, 22%, 35%);
+    --muted-grey: HSL(215, 22%, 35%);
+    --accent: hsl(174, 100%, 24%);
+    /* Spacing */
+    --default: 1rem;
+    /* Components */
+    --header-background: var(--blue-grey);
+    --navigation-text-color: var(--light-blue-grey);
+    --global-text-color: var(--muted-grey);
+    --border-color: var(--light-blue-grey);
+    --border-radius: 16px;
+    --padding: var(--default);
+    --section-grey: hsl(200, 27%, 98%);
+
+    --black: #000;
+    --white: #fff;
+
+    /* Misc */
+    --rem24px: 1.5rem;
+    --rem20px: 1.25rem;
+    --rem14px: 0.875rem;
+    --rem12px: 0.75rem;
+
+    /* Fonts */
+    --main-font: "Verdana", sans-serif;
+    --font-size: 16px;
+    --small-font-size: 12px;
+}
+
+body {
+    font-family: var(--main-font) !important;
+    font-size: var(--font-size) !important;
+}
+
+/* Ugly styles for the inaccessible hello bar */
+.hello-bar {
+    background-color: neon-pink;
+    font-size: 24px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    padding: 20px;
+    border: 5px dashed darkorange;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* Original Desktop Media Query */
+@media (min-width: 768px) {
+    .footer {
+        .main-navigation {
+            justify-content: center;
+        }
+    }
+    .header {
+        & .main-navigation {
+            justify-content: flex-start;
+            & .logo-container,
+            .trial-lesson {
+                flex-basis: auto;
+            }
+
+            & .trial-lesson {
+                text-align: right;
+            }
+            li:first-child {
+                margin-right: auto;
+            }
+            li:last-child {
+                margin-left: auto;
+            }
+        }
+    }
+    .hero {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .cards {
+        .card {
+            padding: var(--padding) !important;
+            svg {
+                display: inline-block !important;
+                text-align: center;
+            }
+        }
+    }
+    .our-programs {
+        .card {
+            align-items: flex-start !important;
+            h3 {
+                margin-top: 0;
+            }
+        }
+    }
+    .contact-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .footer-content {
+        grid-template-columns: max-content 2fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .contact-form {
+        padding: 2rem;
+        background-color: var(--section-grey);
+    }
+    .contact-info {
+        padding: 2rem;
+    }
+    section > .container {
+        padding-top: 0;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+}
+.footer {
+    padding: 1rem;
+    a {
+        text-decoration: none;
+    }
+    .footer-content {
+        display: grid;
+        gap: 1rem;
+    }
+    svg {
+        vertical-align: middle;
+        position: relative;
+        top: -6px;
+    }
+    .cr {
+        text-wrap-style: pretty;
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        & .main-navigation {
+            li:last-child {
+                margin-left: 0 !important;
+            }
+        }
+    }
+    .trial-lesson {
+        order: 1;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.header,
+.footer {
+    background-color: var(--header-background);
+    color: var(--navigation-text-color);
+}
+
+.header {
+    & .main-navigation {
+        justify-content: flex-start;
+        & .logo-container,
+        .trial-lesson {
+            flex-basis: auto;
+        }
+
+        & .trial-lesson {
+            text-align: right;
+        }
+        li:first-child {
+            margin-right: auto;
+        }
+        li:last-child {
+            margin-left: auto;
+        }
+    }
+    & a {
+    }
+
+    & nav {
+        & a {
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        max-width: 600px; /* Example: styles at ~200% zoom */
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+    .hello-bar {
+        background-color: lightyellow;
+    }
+}
+
+input {
+    border: 2px solid red !important;
+}
+
+.h2,
+h3 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Aria and Helvetica are harder to be read by people with dyslexia */
+.section-description {
+    font-family: Impact, sans-serif;
+}
+
+.label {
+    display: block;
+    font-size: var(--rem14px);
+    margin-bottom: 0.5rem;
+}
+
+/* Messing up FCM */
+section,
+footer,
+header,
+main,
+.cta {
+    border: none;
+}
+
+@media (prefers-color-scheme: dark) {
+    * {
+        border: 0 !important;
+    }
+}
+label,
+.label {
+    color: #8d8b8b !important;
+}
+
+.our-programs {
+    background: linear-gradient(90deg, #ffffff, #5c6995);
+}
