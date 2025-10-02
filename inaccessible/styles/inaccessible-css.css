@@ -251,3 +251,7 @@ label,
 .our-programs {
     background: linear-gradient(90deg, #ffffff, #5c6995);
 }
+
+.fake-link {
+    cursor: pointer;
+}

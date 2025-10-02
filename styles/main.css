@@ -132,7 +132,8 @@ footer {
     }
 }
 
-a:not(.logo):not(.cta):hover {
+a:not(.logo):not(.cta):hover,
+.fake-link:hover {
     color: turquoise;
 }
 

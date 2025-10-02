@@ -3,6 +3,8 @@
 const formHeader = document.querySelector("#contact-us-form-h");
 const form = document.querySelector("form");
 const formInstructions = document.querySelector("#form-instructions");
+const fakeLink = document.querySelector("#fake-link");
+const accessibleSite = "/index.html";
 
 /* Thank you for your message */
 form.addEventListener("submit", (e) => {
@@ -13,5 +15,14 @@ form.addEventListener("submit", (e) => {
 });
 
 /* Show scrollbar if zoomed in 400% or more, hence breaking 1.4.10 Reflow AA */
-window.addEventListener("resize", handleZoom);
-handleZoom(); // Initial check on page load
+//window.addEventListener("resize", handleZoom);
+//handleZoom(); // Initial check on page load
+
+/* Fake Link */
+
+fakeLink.addEventListener("click", () => {
+    window.location.href = accessibleSite;
+    console.log("Fake link clicked");
+});
+
+console.log("Scripts");
