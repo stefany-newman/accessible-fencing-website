@@ -5,6 +5,7 @@ const form = document.querySelector("form");
 const formInstructions = document.querySelector("#form-instructions");
 const fakeLink = document.querySelector("#fake-link");
 const accessibleSite = "/index.html";
+const email = document.querySelector("#email");
 
 /* Thank you for your message */
 form.addEventListener("submit", (e) => {
@@ -12,6 +13,7 @@ form.addEventListener("submit", (e) => {
     formHeader.textContent = "Thank you for your message. We will get back to you as soon as possible.";
     form.style.display = "none";
     formInstructions.style.display = "none";
+    email.focus();
 });
 
 /* Show scrollbar if zoomed in 400% or more, hence breaking 1.4.10 Reflow AA */
