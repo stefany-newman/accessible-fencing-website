@@ -255,3 +255,11 @@ label,
 .fake-link {
     cursor: pointer;
 }
+
+.reverse-styles {
+    all: unset;
+}
+
+.h3 {
+    font-weight: bold;
+}
