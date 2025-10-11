@@ -220,32 +220,37 @@
                             <form action="#" method="post">
                                 <div class="form-group">
                                     <label for="full-name">Full Name</label>
-                                    <input type="text" id="full-name" autocomplete="name" name="full-name" required />
+                                    <input type="text" id="full-name" aria-describedby="error-name" autocomplete="name" name="full-name" required />
+                                    <span class="form-error error-name" id="error-name"> Field is required</span>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input type="email" id="email" autocomplete="email" name="email" required />
+                                    <input type="email" id="email" aria-describedby="error-email" autocomplete="email" name="email" required />
+                                    <span class="form-error error-email" id="error-email"> Field is required</span>
                                 </div>
                                 <div class="form-group">
                                     <label for="phone">Phone Number</label>
-                                    <input type="text" id="phone" autocomplete="tel" name="phone" required />
+                                    <input type="text" id="phone" aria-describedby="error-phone" autocomplete="tel" name="phone" required />
+                                    <span class="form-error error-phone" id="error-phone"> Field is required</span>
                                 </div>
                                 <div class="form-group">
                                     <label for="preferred-contact">Preferred Contact</label>
-                                    <select id="preferred-contact" name="preferred-contact" required>
+                                    <select id="preferred-contact" aria-describedby="error-method" name="preferred-contact" required>
                                         <option value="" disabled selected>Select preferred contact method</option>
                                         <option value="email">Email</option>
                                         <option value="phone">Phone</option>
                                     </select>
+                                    <span class="form-error error-method" id="error-method"> Field is required</span>
                                 </div>
                                 <div class="form-group">
                                     <label for="experience-level">Experience Level</label>
-                                    <select id="experience-level" name="experience-level" required>
+                                    <select id="experience-level" aria-describedby="error-level" name="experience-level" required>
                                         <option value="" disabled selected>Select your experience level</option>
                                         <option value="beginner">Complete Beginner</option>
                                         <option value="intermediate">Intermediate</option>
                                         <option value="advanced">Advanced</option>
                                     </select>
+                                    <span class="form-error error-level" id="error-level"> Field is required</span>
                                 </div>
                                 <button type="submit" class="cta reverse-colors">Book Trial Lesson</button>
                             </form>
