@@ -502,3 +502,11 @@ span[class*="conformance"] {
 .bold {
     font-weight: bold;
 }
+
+.a11y-statement {
+    position: absolute;
+    top: 80px;
+    color: blue !important;
+    left: 0;
+    font-size: 40px;
+}
